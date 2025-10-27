@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Surface Pro 5",
+    "image": "https://ngocnguyen.vn/cdn/images/202307/goods_img/surface-pro-5-core-i5-7300u-123-inch-qhd--model-2017-G11898-1688300565301.png",
+    "price": 4990000,
+    "cate_id": 3
+  },
+  {
+    "id": 2,
+    "name": "Iphone 17 Pro",
+    "image": "https://24hstore.vn/images/products/2025/09/11/large/iphone-17-pro-max-cam-nb_1757564962.jpg",
+    "price": 36000000,
+    "cate_id": 2
+  },
+  {
+    "id": 3,
+    "name": "Dell",
+    "image": "https://kimlongcenter.com/upload/product/n7440-1_1_2_2.png",
+    "price": 16900000,
+    "cate_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Samsung galaxy",
+    "image": "https://ntstore.com.vn/wp-content/uploads/2025/02/ntstore_samsung-galaxy-s24-ultra-xam-1-2.png.webp",
+    "price": 30000000,
+    "cate_id": 2
+  },
+  {
+    "id": 5,
+    "name": "Surface Pro 9",
+    "image": "https://ngocnguyen.vn/cdn/images/202501/goods_img/surface-pro-9-core-i7-1255u-13-inch-qhd-model-2022-G16201-1736475005654.png",
+    "price": 19490000,
+    "cate_id": 3
+  },
+  {
+    "id": 6,
+    "name": "Laptop gaming",
+    "image": "https://product.hstatic.net/200000420363/product/_new_-anh-sp-web_2f3716d0b1ad4d84930fba0c644ceebb_compact.png",
+    "price": 25000000,
+    "cate_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Iphone 14 Pro",
+    "image": "https://24hstore.vn/images/products/2023/06/14/large/iphone-14-pro-128gb-cu-tim.jpg",
+    "price": 14000000,
+    "cate_id": 2
+  },
+  {
+    "id": 8,
+    "name": "Macbook",
+    "image": "https://macstores.vn/wp-content/uploads/2024/10/imac-m4-pink.jpg",
+    "price": 20000000,
+    "cate_id": 1
+  }
+]
