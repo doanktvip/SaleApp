@@ -1,6 +1,0 @@
-để tải các flask có sẵn
-pip install -r requirements.txt
-tạo môi trường ảo
-python -m venv venv
-kích hoạt môi trường ảo
-.\venv\Scripts\activate
