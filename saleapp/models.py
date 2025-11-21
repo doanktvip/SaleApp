@@ -3,7 +3,7 @@ from datetime import datetime
 from enum import Enum as RoleEnum
 
 from flask_login import UserMixin
-from sqlalchemy import Column, Integer, String, Float, ForeignKey, Boolean, DateTime, Enum
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, Boolean, DateTime, Enum, Text
 from sqlalchemy.orm import relationship
 from saleapp import db, app
 
@@ -40,22 +40,23 @@ class Product(Base):
                    default="https://res.cloudinary.com/dy1unykph/image/upload/v1740037805/apple-iphone-16-pro-natural-titanium_lcnlu2.webp")
     price = Column(Float, default=0.0)
     cate_id = Column(Integer, ForeignKey(Category.id), nullable=False)
+    description = Column(Text)
 
 
-# if __name__ == "__main__":
-#     with app.app_context():
-#         db.create_all()
-#         c1 = Category(name="Laptop")
-#         c2 = Category(name="Mobile")
-#         c3 = Category(name="Tablet")
-#         db.session.add_all([c1, c2, c3])
-#         db.session.commit()
-#         with open("data/product.json", encoding="utf-8") as f:
-#             products = json.load(f)
-#             for p in products:
-#                 db.session.add(Product(**p))
-#         import hashlib
-#
-#         u = User(name="User", username="user", password=str(hashlib.md5("123".encode("utf-8")).hexdigest()))
-#         db.session.add(u)
-#         db.session.commit()
+if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
+        c1 = Category(name="Laptop")
+        c2 = Category(name="Mobile")
+        c3 = Category(name="Tablet")
+        db.session.add_all([c1, c2, c3])
+        db.session.commit()
+        with open("data/product.json", encoding="utf-8") as f:
+            products = json.load(f)
+            for p in products:
+                db.session.add(Product(**p))
+        import hashlib
+
+        u = User(name="User", username="user", password=str(hashlib.md5("123".encode("utf-8")).hexdigest()))
+        db.session.add(u)
+        db.session.commit()
